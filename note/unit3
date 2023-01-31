@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 3 Note</title>
+    </head>
+
+    <body>
+        <h1>Links, Images and Embedding</h1>
+            <h2>Links</h2>
+                <h3>External</h3>
+                    <p>External links go off your site.</p>
+                    <a href="http://www.google.com" target="_blank">Google</a>
+                    <!--target attribute with value blank opens new tab-->
+                <h3>relative</h3>
+                    <p>Relative links link to a page within your own site.</p>
+                    <a href="example.html">example</a>
+                    <p>Link to </p>
+                <h3>Bookmark</h3>
+            <h2></h2>
+    </body>
