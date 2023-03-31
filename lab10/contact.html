@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content = 'IE=edge'>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .part1,.part2{
+                display: flex;
+                background-color: #fafafa;
+                border-radius: 1em;
+                margin: 10px;
+            }
+            div{padding: 20px;}
+            .part2{
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html" style="display: inline-block;">Home</a>
+            <span>|</span>
+            <a href="skills.html" style="display: inline-block;">Skills</a>
+            <span>|</span>
+            <a href="contact.html" style="display: inline-block;">Contact</a>
+        </nav>
+        <h1>CONTACT</h1>
+        <div class="part1">
+            <div>
+                <h2>Name</h2>
+                    Yiyan Jiang
+                <h2>Address</h2>
+                    150 Henry St Apt 240<br>Syracuse, NY, 13210<br>
+            </div>
+            <div>
+                <h2>Personal Link</h2>
+                    <a href="https://www.linkedin.com/in/yiyan-jiang-279051193/" target="_blank"><img src="../images/LinkedIn-China-Logos/LI-China-In-Bug.png" alt="Linkedin Logo" style="width:40%;"></a><br>
+                    <a href="https://www.linkedin.com/in/yiyan-jiang-279051193/" target="_blank">My Linkedin Profile</a>
+                <h2>Email</h2>
+                    <a href="mailto:yjiang57@syr.edu">Email Me</a>
+            </div>
+        </div>
+        <div class="part2">
+            <div>
+                <h2>Form</h2>
+                    <form action="https://formspree.io/f/mrgvppky" method="post">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+
+                        <label for="secondname">Second Name:</label>
+                        <input type="text" id="secondname" name="secondname">
+                        <br>
+
+                        <label for="emailaddress">Email Address:</label>
+                        <input type="text" id="emailaddress" name="emailaddress">
+                        <br>
+                        <br>
+
+                        <label for="content">Content</label><br>
+                        <textarea id="content" name="content" rows="6" cols="25%"></textarea>
+                        <br>
+
+                        <label for="purpose">Purpose</label>
+                        <select id="purpose" name="purpose">
+                            <option label=" "></option>
+                            <option value="work">Work</option>
+                            <option value="friendship">Friendship</option>
+                            <option value="askquestions">Ask Questions</option>
+                        </select>
+                        <br>
+                        <br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2306300207015!2d-76.14328888487965!3d43.03657877914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39980d3021f%3A0x591e978c260aff0e!2s150%20Henry%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1675370387344!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </body>
+</html>
