@@ -5,28 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Like-New Office Chair</title>
+    <style>
+        .pro{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pro div{
+            width: 40%;
+        }
+        .info{
+            margin-left: 10%;
+        }
+        .pri {
+            font-size: 2em;
+        }
+        @media only screen and (max-width:800px){
+            .pro div{
+                width: 100%;
+            }
+            .info{
+                margin: 0%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" style="display: inline-block;">Home</a>
-        <span>|</span>
-        <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
-        <span>|</span>
-        <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        <div>
+            <a href="index.html" style="display: inline-block;">Home</a>
+            <span>|</span>
+            <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
+            <span>|</span>
+            <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        </div>
+        <div>
+            <input type="text" name="searchbar" style="height: 1.5em;">
+            <input type="submit" value="Search" style="font-size: 0.7em;">
+        </div>
     </nav>
 
     <main>
-        <h1>Like-New Office Chair</h1>
-        <div>
-            <div>
-                <img src="../images/project/arthur-lambillotte-sSJ44vZRTHw-unsplash.jpeg"  alt="product photo" style="height:25%;width:25%;">
+        <section>
+            <div class="pro">
+                <div>
+                    <img src="../images/project/arthur-lambillotte-sSJ44vZRTHw-unsplash.jpeg"  alt="product photo">
+                </div>
+                <div class="info">
+                    <h1>Like-New Office Chair</h1>
+                    <p class="pri">100$</p>
+                    <p>Free Shipping</p>
+                    <input type="submit" value="Buy It Now" style="width: 100px;">
+                    <input type="submit" value="Save" style="width: 100px; margin-left: 10px;">
+                    <br>
+                    <input type="submit" value="Add To Shopping Cart" style="width: 215px; margin-top: 10px;">
+                </div>
             </div>
-            <div>
-                <p>100$</p>
-                <input type="submit" value="Add To Shopping Cart">
-            </div>
-        </div>
+        </section>
+
 
 
     </main>

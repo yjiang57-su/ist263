@@ -5,69 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <style>
+        .part1 a{
+            font-size: 1.3em;
+        }
+        iframe{
+            max-width: 100%;
+            height: 300px;
+            margin-top: 30px;
+        }
+        @media only screen and (max-width:800px){
+            .part1 div{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" style="display: inline-block;">Home</a>
-        <span>|</span>
-        <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
-        <span>|</span>
-        <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        <div>
+            <a href="index.html" style="display: inline-block;">Home</a>
+            <span>|</span>
+            <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
+            <span>|</span>
+            <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        </div>
+        <div>
+            <input type="text" name="searchbar" style="height: 1.5em;">
+            <input type="submit" value="Search" style="font-size: 0.7em;">
+        </div>
     </nav>
 
     <main>
         <h1>CONTACT</h1>
-        <div class="part1">
-            <div>
-                <h2>Name</h2>
-                    Yiyan Jiang
-                <h2>Address</h2>
-                    150 Henry St Apt 240<br>Syracuse, NY, 13210<br>
+        <section>
+            <div class="part1">
+                <div>
+                    <h2>Name</h2>
+                        <p>Yiyan Jiang</p>
+                    <h2>Address</h2>
+                        <p>
+                            150 Henry St Apt 240
+                        </p>
+                        <p>
+                            Syracuse, NY, 13210
+                        </p>
+                        
+
+                    <h2>Email</h2>
+                        <a href="mailto:yjiang57@syr.edu">Email Me</a>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2306300207015!2d-76.14328888487965!3d43.03657877914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39980d3021f%3A0x591e978c260aff0e!2s150%20Henry%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1675370387344!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
+
+        </section>
+
+        <section>
             <div>
-                <h2>Email</h2>
-                    <a href="mailto:yjiang57@syr.edu">Email Me</a>
+                <div>
+                    <h2>Form</h2>
+                        <form action="https://formspree.io/f/mrgvppky" method="post">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname">
+                            <br>
+
+                            <label for="secondname">Second Name:</label>
+                            <input type="text" id="secondname" name="secondname">
+                            <br>
+
+                            <label for="emailaddress">Email Address:</label>
+                            <input type="text" id="emailaddress" name="emailaddress">
+                            <br>
+                            <br>
+
+                            <label for="content">Content</label><br>
+                            <textarea id="content" name="content" rows="6" cols="25%"></textarea>
+                            <br>
+
+                            <label for="purpose">Purpose</label>
+                            <select id="purpose" name="purpose">
+                                <option label=" "></option>
+                                <option value="work">Work</option>
+                                <option value="friendship">Friendship</option>
+                                <option value="askquestions">Ask Questions</option>
+                            </select>
+                            <br>
+                            <br>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <h2>Form</h2>
-                    <form action="https://formspree.io/f/mrgvppky" method="post">
-                        <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="firstname">
-                        <br>
+        </section>
 
-                        <label for="secondname">Second Name:</label>
-                        <input type="text" id="secondname" name="secondname">
-                        <br>
-
-                        <label for="emailaddress">Email Address:</label>
-                        <input type="text" id="emailaddress" name="emailaddress">
-                        <br>
-                        <br>
-
-                        <label for="content">Content</label><br>
-                        <textarea id="content" name="content" rows="6" cols="25%"></textarea>
-                        <br>
-
-                        <label for="purpose">Purpose</label>
-                        <select id="purpose" name="purpose">
-                            <option label=" "></option>
-                            <option value="work">Work</option>
-                            <option value="friendship">Friendship</option>
-                            <option value="askquestions">Ask Questions</option>
-                        </select>
-                        <br>
-                        <br>
-
-                        <input type="submit" value="Submit">
-                    </form>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2306300207015!2d-76.14328888487965!3d43.03657877914725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39980d3021f%3A0x591e978c260aff0e!2s150%20Henry%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1675370387344!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </main>
-    
+
     <footer>
         <hr>
         &copy; 2023

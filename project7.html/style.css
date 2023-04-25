@@ -7,6 +7,9 @@ nav{
     padding: 10px;
     margin-bottom: 30px;
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 nav a {
     color: #f2e3db;
@@ -17,8 +20,9 @@ body{
 }
 
 img{
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 @media only screen and (max-width:800px){
@@ -28,12 +32,23 @@ img{
     span {
         display: none;
     }
-    img{
-        max-width: 100%;
-    }
 }
 footer{
     background-color: #41644a;
     color: #f2e3db;
     height: 100px;
+}
+
+section{
+    border: 5px solid #41644a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+p, label{
+    font-size: 1.3em;
+}
+.pro input{
+    height: 40px;
+    font-size: 1em;
 }

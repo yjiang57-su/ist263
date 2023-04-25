@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        section{
-            border: 5px solid #41644a;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            padding-left: 10px;
-        }
         .fav{
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sold div{
+            width: 300px;
         }
         .fav div{
-            margin-right: 20px;
+            width: 300px;
+        }
+        @media only screen and (max-width:800px){
+            .fav div, .sold div{
+                width: 100%;
+            }
+        }
+        h1{
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" style="display: inline-block;">Home</a>
-        <span>|</span>
-        <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
-        <span>|</span>
-        <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        <div>
+            <a href="index.html" style="display: inline-block;">Home</a>
+            <span>|</span>
+            <a href="dashboard.html" style="display: inline-block;">Dashboard</a>
+            <span>|</span>
+            <a href="contact.html" style="display: inline-block;">Contact Us</a>
+        </div>
+        <div>
+            <input type="text" name="searchbar" style="height: 1.5em;">
+            <input type="submit" value="Search" style="font-size: 0.7em;">
+        </div>
     </nav>
+
     <main>
         <section>
             <h1>Dashboard</h1>
@@ -53,12 +66,18 @@
                     <a href="2.html" target="_blank"><p>Vintage Record Player</p></a>
                     <a href="2.html" target="_blank"><p>100$</p></a>
                 </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
             </div>
         </section>
             
         <section>
             <h1>Sold</h1>
-            <div>
+            <div class="sold">
                 <div>
                     <a href="3.html" target="_blank"><img src="../images/project/dane-deaner-wkC8EX8y9Mc-unsplash.jpeg"  alt="product photo"></a>
                     <br>
