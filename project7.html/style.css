@@ -1,0 +1,39 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: #41644a;
+    color: #f2e3db;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+nav a {
+    color: #f2e3db;
+}
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (max-width:800px){
+    nav a {
+        width: 100%;
+    }
+    span {
+        display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+footer{
+    background-color: #41644a;
+    color: #f2e3db;
+    height: 100px;
+}
