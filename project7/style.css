@@ -52,3 +52,16 @@ p, label{
 body{
     font-family: 'Instrument Serif', serif;
 }
+.skip {
+    background-color: #41644a;
+    color: #f2e3db;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px;
+}
+.skip:focus {
+    left: 10px;
+}
